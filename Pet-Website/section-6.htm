@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section 6</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .bg-color {
+        background: #5380c1;
+      }
+
+      .vh-100 {
+        height: 100vh;
+      }
+
+      .pricing {
+        text-align: center;
+        padding-top: 25px;
+        color: #fff;
+      }
+      .pricing h1 {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 75px;
+        margin-bottom: 8px;
+      }
+      .pricing p {
+        font-size: 30px;
+        width: 50%;
+        margin: auto;
+      }
+
+      /* PRODUCT STYLES */
+      .product-flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .product {
+        margin-top: 50px;
+        background-color: #fff;
+        color: #739ee3;
+        width: 20%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 12px 0px;
+      }
+
+      .product h3 {
+        font-size: 37px;
+        padding-bottom: 15px;
+        font-family: var(--primary-font);
+      }
+      .product strong {
+        display: block;
+        padding-top: 20px;
+        font-size: 37px;
+        font-weight: bolder;
+        font-family: var(--primary-font);
+      }
+
+      .product p {
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 8px;
+      }
+
+      .product .btn-order-now {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      /* btn style*/
+      .btn-order-now {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+        background: #edc315;
+        padding: 6px 50px;
+        border-radius: 30px;
+        color: #fff;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- section 6 -->
+    <!-- pricing -->
+    <section class="bg-color vh-100">
+      <div class="pricing">
+        <h1>pricing</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          eligendi aperiam dicta esse unde
+        </p>
+      </div>
+      <div class="product-flex">
+        <!-- product 1 -->
+        <div class="product">
+          <h3>Premium</h3>
+          <img src="imgs/paw-icon.png" alt="" />
+          <strong>$19.00</strong>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="btn-order-now">Order Now</button>
+        </div>
+        <!-- product 2 -->
+        <div class="product">
+          <h3>Premium</h3>
+          <img src="imgs/paw-icon.png" alt="" />
+          <strong>$19.00</strong>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="btn-order-now">Order Now</button>
+        </div>
+        <!-- product 3 -->
+        <div class="product">
+          <h3>Premium</h3>
+          <img src="imgs/paw-icon.png" alt="" />
+          <strong>$19.00</strong>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="btn-order-now">Order Now</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

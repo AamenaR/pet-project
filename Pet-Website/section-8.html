@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section 8</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .section-wrapper{
+        position: relative;        
+    }
+  
+    .yellow-overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(imgs/sec-8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+
+    }
+
+    .yellow-overlay-img::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: inherit;
+    background-image: url(imgs/rgba-img.png);
+    opacity: 0.6;
+    z-index: 1;
+    }
+
+    /* .container{
+        width: 90%;
+    } */
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-info{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        text-align: center;
+    }
+</style>
+<body>
+    <section>
+        <div class="section-wrapper">
+            <div class="yellow-overlay-img"></div>
+            
+            <div class="row">
+                <div class="text-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatum nihil voluptatem.</p>
+                    <strong>Dr.jenny</strong>             
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
